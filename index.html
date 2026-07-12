@@ -1,0 +1,238 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARE CARRIACOU | Premium Lifestyle Concierge</title>
+    <style>
+        :root {
+            --brand-purple: #4A154B;
+            --brand-cream: #FDFBF7;
+            --text-dark: #2A082C;
+            --accent-gold: #D4AF37;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--brand-cream);
+            color: var(--text-dark);
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+        }
+        header {
+            background-color: var(--brand-purple);
+            color: var(--brand-cream);
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 3px solid var(--accent-gold);
+        }
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 0.25rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        header p {
+            font-style: italic;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        .disclaimer-box {
+            border: 2px solid var(--brand-purple);
+            background-color: #FFF;
+            padding: 2rem;
+            margin-bottom: 4rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .disclaimer-box h2 {
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 0.1rem;
+            color: var(--brand-purple);
+            margin-bottom: 0.5rem;
+        }
+        .disclaimer-box p {
+            font-weight: bold;
+            font-size: 1.05rem;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2.5rem;
+        }
+        @media (max-width: 600px) {
+            .services-grid { grid-template-columns: 1fr; }
+        }
+        .card {
+            background: #FFF;
+            border: 1px solid #EAE5DC;
+            border-radius: 6px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(74, 21, 75, 0.03);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: var(--brand-purple);
+        }
+        .card h3 {
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            color: var(--brand-purple);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #F0EBE1;
+            padding-bottom: 0.5rem;
+        }
+        .card p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .warning-note {
+            font-size: 0.9rem;
+            color: #8c1d40;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+        .package-details {
+            background-color: #F9F6F0;
+            padding: 1rem;
+            border-left: 3px solid var(--accent-gold);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+        .package-details ul {
+            list-style: none;
+            margin-top: 0.5rem;
+        }
+        .package-details li {
+            margin-bottom: 0.25rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+        .package-details li::before {
+            content: "•";
+            color: var(--brand-purple);
+            position: absolute;
+            left: 0;
+        }
+        .btn {
+            display: block;
+            text-align: center;
+            background-color: var(--brand-purple);
+            color: var(--brand-cream);
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            font-weight: bold;
+            font-size: 0.95rem;
+            padding: 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            border: 1px solid var(--brand-purple);
+            transition: all 0.2s;
+            cursor: pointer;
+            width: 100%;
+            margin-top: auto;
+        }
+        .btn:hover {
+            background-color: var(--brand-cream);
+            color: var(--brand-purple);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Care Carriacou</h1>
+        <p>Premium Lifestyle Companionship & Concierge Services</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="disclaimer-box">
+            <h2>Strict Policy Disclaimer</h2>
+            <p>We do not provide physical personal care, medical handling, or invasive grooming. All clients must be able-bodied and fully independent.</p>
+        </div>
+
+        <div class="services-grid">
+            
+            <!-- Service 1 -->
+            <div class="card">
+                <div>
+                    <h3>1. Premium Companionship & Digital Concierge</h3>
+                    <p>Bespoke 3-hour social sessions built around deep conversation and music nostalgia, including optional gentle hand and nail grooming or a therapeutic hand and foot massage by a trusted professional. Includes full online administrative support: we coordinate your online grocery shopping and manage repeat prescription ordering directly with pharmacies and GPs for direct home delivery.</p>
+                </div>
+                <!-- REPLACE # WITH YOUR CALENDLY ASSESS LINK LATER -->
+                <a href="#" class="btn">Book Care & Concierge Assessment — £50</a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="card">
+                <div>
+                    <h3>2. Curated Sea-Breeze Outings</h3>
+                    <p>Door-to-door, chaperoned local day trips tailored comfortably to independent seniors. Includes our signature "Secure Seated Beach Foot-Dip" experience: clients safely enjoy the therapeutic benefits of the calm tide from a luxury beachside deck chair with zero physical lifting or handling required. Features optional Milestone & Birthday Gift Outings for celebratory restaurant meals with live WhatsApp updates.</p>
+                </div>
+                <!-- REPLACE # WITH YOUR CALENDLY OUTING LINK LATER -->
+                <a href="#" class="btn">Book Excursion Assessment — £50</a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="card">
+                <div>
+                    <h3>3. International Travel Companionship</h3>
+                    <p>Bespoke flight accompaniment for independent seniors traveling globally for family milestones or medical appointments. Families book the tickets and arrange airline Special Assistance directly; we provide continuous emotional support, comfort, and regular updates throughout the transit.</p>
+                    <p class="warning-note">Important: All bookings are coordinated remotely via step-by-step phone/video guidance. We never collect, view, or store your private card or passport numbers.</p>
+                </div>
+                <!-- REPLACE # WITH YOUR CALENDLY TRAVEL LINK LATER -->
+                <a href="#" class="btn">Book Travel Consultation — £50</a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="card">
+                <div>
+                    <h3>4. Heritage Resting Place Care</h3>
+                    <p>For families living overseas in the UK, US, or Canada, we act as your trusted hands on the ground in Grenada and Carriacou to tend, clean, and freshen family final resting places.</p>
+                    
+                    <div class="package-details">
+                        <strong>Pricing Options:</strong>
+                        <ul>
+                            <li><strong>Single Visit: £150</strong> (Includes cleaning and custom floral tribute)</li>
+                            <li><strong>Annual "Rest & Honour" Package: £300–£450</strong> per grave (Covers Christmas, Mother's Day, Father's Day, and All Saints Day).</li>
+                        </ul>
+                        <br>
+                        <strong>What's Included in Annual Package:</strong>
+                        <ul>
+                            <li>Full jungle/bush clearing & concrete scrubbing</li>
+                            <li>Fresh coat of weather-resistant white or trim paint</li>
+                            <li>High-quality UV-resistant artificial tropical arrangement</li>
+                            <li>Live WhatsApp video walkthrough of the finished plot</li>
+                        </ul>
+                    </div>
+                    <p class="warning-note">Note: Plot details, cemetery location, and deceased name are safely collected directly upon secure checkout.</p>
+                    <!-- REPLACE # WITH YOUR STRIPE PAYMENT LINK LATER -->
+                    <a href="#" class="btn">Order Grave Tending Package</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
